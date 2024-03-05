@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplo Tabela Aninhada</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 0.1px solid black;
+        text-align: center;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Exemplo tabela aninhada</h2>
+
+    <table>
+      <!-- Primeira linha de cabeçalhos -->
+      <tr>
+        <th rowspan="2" colspan="2">CI</th>
+        <th rowspan="2">Todos os gêneros</th>
+        <th colspan="2">Por gênero</th>
+      </tr>
+      <!-- Segunda linha de cabeçalhos -->
+      <tr>
+        
+        <td>
+          <table>
+            <tr>
+              <th>Masculino</th>
+              <th>Feminino</th>
+            </tr>
+            <tr>
+              <td>92</td>
+              <td>45</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Linha de dados atualizada com os valores fornecidos -->
+      <tr>
+        <td>Rural</td>
+        <td>65214</td>
+        <td>42153</td>
+        <td>4152</td>
+      </tr>
+    </table>
+  </body>
+</html>
