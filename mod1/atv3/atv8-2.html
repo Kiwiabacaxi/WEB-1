@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Formulario</legend>
+
+        <!-- Campo para entrada de nome -->
+        <label for="nome">Nome (obrigatório):</label>
+        <input type="text" id="nome" name="nome" required />
+        <br />
+
+        <!-- Campo para entrada de CPF -->
+        <label for="cpf">CPF (obrigatório):</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+          required
+        />
+        <br />
+
+        <!-- Campo para entrada de data de nascimento -->
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" />
+        <br />
+
+        <!-- Campo para entrada de endereço -->
+        <label for="endereco">Endereço (obrigatório):</label>
+        <input type="text" id="endereco" name="endereco" required />
+        <br />
+
+        <!-- Campo para seleção de sexo -->
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+        </select>
+        <br />
+
+        <!-- Campo para entrada de telefone -->
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          pattern="\(\d{2}\) \d{4}-\d{4}"
+        />
+        <br />
+
+        <!-- Campo para entrada de login -->
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login" />
+        <br />
+
+        <!-- Campo para entrada de senha -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" />
+        <br />
+
+        <!-- Botão de envio -->
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+  </body>
+</html>

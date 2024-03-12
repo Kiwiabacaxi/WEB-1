@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Fazer um formulario em html puro -->
+    <!-- Primeiro preciso de separar em dados pessoais como nome/ endereco/ cidade/ estado -->
+
+    <form>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <!-- Campo para entrada de nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" />
+        <br />
+
+        <!-- Campo para entrada de endereço -->
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" />
+        <br />
+
+        <!-- Campo para entrada de cidade -->
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" />
+        <br />
+        <!-- Lista de opcoes com agrupamento -->
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+          <optgroup label="Região Norte">
+            <option value="ac">Acre</option>
+            <option value="ap">Amapá</option>
+            <!-- TODO add mais estados aq -->
+          </optgroup>
+          <optgroup label="Região Nordeste">
+            <option value="ba">Bahia</option>
+            <option value="ce">Ceará</option>
+            <!-- TODO add mais estados aq -->
+          </optgroup>
+          <optgroup label="Região Centro-Oeste">
+            <option value="df">Distrito Federal</option>
+            <option value="go">Goiás</option>
+            <!-- TODO add mais estados aq -->
+          </optgroup>
+          <optgroup label="Região Sudeste">
+            <option value="es">Espírito Santo</option>
+            <option value="mg">Minas Gerais</option>
+            <!-- TODO add mais estados aq -->
+          </optgroup>
+          <optgroup label="Região Sul">
+            <option value="pr">Paraná</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <!-- TODO add mais estados aq -->
+          </optgroup>
+        </select>
+      </fieldset>
+    </form>
+
+    <br />
+    <br />
+
+    <!--  Segundo-->
+    <form>
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+
+        <!-- Campo para natureza do cargo -->
+        <p>Natureza do Cargo:</p>
+        <input type="radio" id="gerencia" name="cargo" value="gerencia" />
+        <label for="gerencia">Gerência</label>
+
+        <input type="radio" id="financeiro" name="cargo" value="financeiro" />
+        <label for="financeiro">Financeiro</label>
+
+        <input type="radio" id="recepcao" name="cargo" value="recepcao" />
+        <label for="recepcao">Recepção</label>
+
+        <input
+          type="radio"
+          id="administrativo"
+          name="cargo"
+          value="administrativo"
+        />
+        <label for="administrativo">Administrativo</label>
+
+        <input type="radio" id="juridico" name="cargo" value="juridico" />
+        <label for="juridico">Jurídico</label>
+
+        <!-- segunda linha de input Area de interesse agora com checkbox : computacao/biologia/meio ambiente/ engenharia/ historia -->
+        <p>Área de Interesse:</p>
+        <input type="checkbox" id="computacao" name="area" value="computacao" />
+        <label for="computacao">Computação</label>
+
+        <input type="checkbox" id="biologia" name="area" value="biologia" />
+        <label for="biologia">Biologia</label>
+
+        <input
+          type="checkbox"
+          id="meio_ambiente"
+          name="area"
+          value="meio_ambiente"
+        />
+        <label for="meio_ambiente">Meio Ambiente</label>
+
+        <input type="checkbox" id="engenharia" name="area" value="engenharia" />
+        <label for="engenharia">Engenharia</label>
+
+        <input type="checkbox" id="historia" name="area" value="historia" />
+        <label for="historia">História</label>
+        <br />
+        <br />
+
+        <!-- Agora preciso de um campo para poder digitar o mini curriculo -->
+        <label for="curriculo">Mini Currículo:</label><br />
+        <textarea id="curriculo" name="curriculo"></textarea>
+      </fieldset>
+
+      <br />
+      <!-- botao de enviar e outro de limpar -->
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpar" />
+    </form>
+  </body>
+</html>

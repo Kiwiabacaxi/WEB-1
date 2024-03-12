@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Campo de senha -->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher cor -->
+    <label for="cor">Escolha uma cor:</label>
+    <input type="color" id="cor" name="cor" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher data -->
+    <label for="data">Escolha uma data:</label>
+    <input type="date" id="data" name="data" value="2024-03-12" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher hora -->
+    <label for="hora">Escolha uma hora:</label>
+    <input type="time" id="hora" name="hora" value="12:00" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher data e hora -->
+    <label for="data_hora">Escolha uma data e hora:</label>
+    <input
+      type="datetime-local"
+      id="data_hora"
+      name="data_hora"
+      value="2024-03-12T12:00"
+    />
+    <br />
+    <br />
+
+    <!-- Campo para escolher o mes -->
+    <label for="mes">Escolha um mês:</label>
+    <input type="month" id="mes" name="mes" value="2024-03" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher a semana -->
+    <label for="semana">Escolha uma semana:</label>
+    <input type="week" id="semana" name="semana" value="2024-W10" />
+    <br />
+    <br />
+
+    <!-- Campo para receber o email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <br />
+    <br />
+
+    <!-- Campo para imagem como botao de envio -->
+    <label for="enviar">Enviar com img:</label>
+    <input
+      type="image"
+      id="enviar"
+      src="../../img/send_button.png"
+      alt="Enviar"
+      style="width: 50px; height: 50px"
+    />
+    <br />
+    <br />
+
+    <!-- Campo para escolher enviar um unico arquivo como doc -->
+    <label for="arquivo">Escolha um arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo" />
+    <br />
+    <br />
+
+    <!-- Campo para enviar varios arquivos -->
+    <label for="arquivos">Escolha varios arquivos:</label>
+    <input type="file" id="arquivos" name="arquivos" multiple />
+    <br />
+    <br />
+
+    <!-- Campo de entrada escondido -->
+    <label for="escondido">Escondido:</label>
+    <input
+      type="hidden"
+      id="escondido"
+      name="escondido"
+      value="valor_escondido"
+    />
+    <br />
+    <br />
+
+    <!-- Campo para escolher um numero inteiro -->
+    <label for="numero">Escolha um número:</label>
+    <input type="number" id="numero" name="numero" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher numeros inteiros de 0 a 10  -->
+    <label for="numero_0_10">Campo para escolher um número de 0 a 10:</label>
+    <input type="number" id="numero_0_10" name="numero_0_10" min="0" max="10" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher um numero com casas decimais -->
+    <label for="decimal">Escolha um número com casas decimais:</label>
+    <input type="number" id="decimal" name="decimal" step="0.01" />
+    <br />
+    <br />
+
+    <!-- Campo para escolher um numero inteiro de 0 a 10 com step de 2 -->
+    <label for="numero_0_10_step_2"
+      >Campo para escolher um número de 0 a 10 com step de 2:</label
+    >
+    <br />
+    <br />
+
+    <!-- Campo de pesquisa com botao para apagar o texto -->
+    <label for="pesquisa">Pesquisa:</label>
+    <input type="search" id="pesquisa" name="pesquisa" />
+    <br />
+    <br />
+
+    <!-- Campo para entrada de numero de telefones -->
+    <label for="telefone">Telefone:</label>
+    <input
+      type="tel"
+      id="telefone"
+      name="telefone"
+      placeholder="(00) 00000-0000"
+      pattern="\(\d{2}\) \d{5}-\d{4}"
+    />
+    <br />
+    <br />
+
+    <!-- Campo para escolher um URL -->
+    <label for="url">URL:</label>
+    <input type="url" id="url" name="url" />
+    <br />
+    <br />
+
+    <!-- Trocar o botao submit por uma imagem -->
+    <label for="enviar">Enviar com img:</label>
+    <input
+      type="image"
+      id="enviar"
+      src="../../img/send_button.png"
+      alt="Enviar"
+      style="width: 50px; height: 50px"
+    />
+    <br />
+    <br />
+
+    <!-- Lista de opcoes com agrupamento -->
+    <label for="carros">Escolha um carro:</label>
+    <select id="carros" name="carros">
+      <optgroup label="Carros nacionais">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="Carros estrangeiros">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+
+      <option value="fiat">Fiat</option>
+      <option value="ford">Ford</option>
+    </select>
+    <br />
+    <br />
+
+    <!-- Botão de envio -->
+    <input type="submit" value="Enviar" />
+  </body>
+</html>
