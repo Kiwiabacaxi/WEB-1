@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prova - Página 3</title>
+  </head>
+  <body>
+    <h1>Prova - Página 3</h1>
+
+    <!-- H2 FORMULARIO -->
+    <h2>Formulario</h2>
+
+    <!-- FORMULARIO COM FIELDSET E GET, qual forma usar ????-->
+    <!-- <form action="pagina3.html" method="GET"> -->
+    <form action="#" method="GET">
+      <fieldset>
+        <legend>Contatos</legend>
+
+        <!-- Campo para entrada de nome, obrigatorio, escrito depois-->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        Obrigatório
+        <br />
+
+        <!-- Campo de entrada para telefone, com texto default cinza no fundo -->
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          placeholder="(34)1234-5678"
+          pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}"
+        />
+        Obrigatório
+        <br />
+
+        <!-- Campo para seleção do banco, apenas 1 opção -->
+        <label for="banco">Banco:</label>
+        <br />
+        <!-- CAIXA -->
+        <input type="radio" name="banco" id="caixa federal" />
+        <label for="caixa">Caixa</label>
+
+        <!-- BANCO DO BRASIL -->
+        <input type="radio" name="banco" id="banco do brasil" />
+        <label for="BB">Banco do brasil</label>
+
+        <!-- ITAU -->
+        <input type="radio" name="banco" id="itau" />
+        <label for="itau">Itau</label>
+
+        <!-- BRADESCO -->
+        <input type="radio" name="banco" id="bradesco" />
+        <label for="bradesco">Bradesco</label>
+        <br />
+
+        <!-- Seletor de cor -->
+        <label for="cor">Cor:</label>
+        <input type="color" id="cor" name="cor" />
+        <br />
+
+        <!-- fechar o fieldset -->
+      </fieldset>
+
+      <!-- QUEBRA DE LINHA PARA VISUAL -->
+      <br />
+
+      <!-- Botão de enviar e botao de limpar -->
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+
+    <br />
+    <br />
+    <!-- VOLTAR PARA A PÁGINA PRINCIPAL -->
+    <a href="./index.html">Voltar para a página principal</a>
+  </body>
+</html>
